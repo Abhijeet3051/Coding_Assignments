@@ -76,7 +76,7 @@ double precise(double n)
 }
 
 // function for sine
-double sin(double angle)
+double Sin(double angle)
 {
 	//call function of conversion of angle 
 	angle = ConversionToRange(angle);
@@ -105,7 +105,7 @@ double sin(double angle)
 
 
 // function for Cosine
-double cos(double angle)
+double Cos(double angle)
 {
 	//call function of conversion of angle 
 	angle = ConversionToRange(angle);
@@ -138,7 +138,7 @@ int main()
 	std :: cout << "Enter an angle: " << std :: endl;
 	std :: cin >> angle;
 	std:: cout << std:: endl;
-	std:: cout << "Sin " << angle << "= " << sin(angle) << std:: endl;
-	std:: cout << "Cos " << angle << "= " << cos(angle) << std:: endl;
+	std:: cout << "Sin " << angle << "= " << Sin(angle) << std:: endl;
+	std:: cout << "Cos " << angle << "= " << Cos(angle) << std:: endl;
 	return 0;
 }

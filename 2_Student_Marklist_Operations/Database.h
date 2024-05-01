@@ -1,11 +1,14 @@
 #pragma once
-#include<vector>
-#include"Student_Data.h"
+#include "Student_Data.h"
+#include <vector>
 
-class Database
-{
+
+
+class Database {
+
 private:
-	std::vector <Student_Data*> m_students;
+	vector <Student*> m_students;
+
 public:
 	void AddStudent(char* firstname, char* lastname);
 	void EnterAllMarksOfASubject(Subject subject);
@@ -13,11 +16,11 @@ public:
 	void DeleteStudent(int rollno);
 	void InsertStudent(int rollno, char* firstname, char* lastname);
 	void UpdateName(int rollno, char* firstname, char* lastname);
-	std::vector <int> TopperRollNos();
-	std::vector <int> SubjectTopperRollNos(Subject subject);
-	int StudentCount();
+	vector <int> TopperRollNos();			// can pass a vector as parameter and values can be addedd to it. so it does not make a copy
+	vector <int> SubjectTopperRollNos(Subject subject);
+	int StudentCount() const;
 	void LoadData(const char* file);
 	void SaveData(const char* file);
-	Student_Data GetStudent(int rollno);
+	Student GetStudent(int rollno) const; //going to create copy on stack
 
 };

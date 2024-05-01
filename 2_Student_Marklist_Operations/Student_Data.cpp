@@ -1,7 +1,6 @@
 #include "Student_Data.h"
 
-
-void Student_Data::defaultMarks() {
+void Student::defaultMarks() {
 	m_marks[physics] = -1;
 	m_marks[chemistry] = -1;
 	m_marks[maths] = -1;
@@ -11,62 +10,64 @@ void Student_Data::defaultMarks() {
 	m_grade = '-';
 }
 
-Student_Data::Student_Data()
-{
+Student::Student() {
 	defaultMarks();
 	m_firstName[0] = '\0';
 	m_lastName[0] = '\0';
-	setRollNo(0);
+	SetRollNo(0);
 }
 
-Student_Data::Student_Data(int rollNo, char* firstName, char* lastName)
-{
+Student::Student(int rollNo, char* firstName, char* lastName) {
 	defaultMarks();
 	int i = 0;
-	while (*(firstName + i) != '\0' && i < NAME_SIZE) {
+	while (*(firstName + i) != '\0' && i < name_size - 1) {
 		m_firstName[i] = *(firstName + i);
 		i++;
 	}
 	m_firstName[i] = '\0';
 	i = 0;
-	while (*(lastName + i) != '\0' && i < NAME_SIZE) {
+	while (*(lastName + i) != '\0' && i < name_size - 1) {
 		m_lastName[i] = *(lastName + i);
 		i++;
 	}
 	m_lastName[i] = '\0';
 	i = 0;
-	setRollNo(rollNo);
+	SetRollNo(rollNo);
+
 }
 
-void Student_Data::setRollNo(int rollNo) {
+void Student::SetRollNo(int rollNo) {
 	m_rollNo = rollNo;
 }
 
-void Student_Data::SetFirstName(char* firstName) {
-	for (int i = 0; i < NAME_SIZE
-		&& *(i + firstName) != '\0'; i++) {
+void Student::SetFirstName(char* firstName) {
+	int i;
+	for (i = 0; i < name_size - 1 && *(i + firstName) != '\0'; i++) {
 		m_firstName[i] = *(i + firstName);
 	}
+	m_firstName[i] = '\0';
 }
 
-void Student_Data::SetLastName(char* lastName) {
-	for (int i = 0; i < NAME_SIZE && *(i + lastName) != '\0'; i++) {
+void Student::SetLastName(char* lastName) {
+	int i;
+	for (i = 0; i < name_size - 1 && *(i + lastName) != '\0'; i++) {
 		m_lastName[i] = *(i + lastName);
 	}
+	m_lastName[i] == '\0';
 }
 
-void Student_Data::SetMarks(float marks, Subject subject) {
+void Student::SetMarks(float marks, Subject subject) {
 	m_marks[subject] = marks;
 }
 
-void Student_Data::CalculatePercentage() {
+void Student::CalculatePercentage() {
 	if ((m_marks[0] != -1) && (m_marks[1] != -1) && (m_marks[2] != -1) && (m_marks[3] != -1) && (m_marks[4] != -1)) {
 		m_percentage = (m_marks[0] + m_marks[1] + m_marks[2] + m_marks[3] + m_marks[4]) / 5;
 		SetGrade();
 	}
 }
 
-void Student_Data::SetGrade() {
+void Student::SetGrade() {
 	if (m_percentage < 40) {
 		m_grade = 'X';
 	}
@@ -75,27 +76,27 @@ void Student_Data::SetGrade() {
 	}
 }
 
-int Student_Data::GetRollNo() const {
+int Student::GetRollNo() const {
 	return m_rollNo;
 }
 
-
-std::string Student_Data::GetFirstName() const {
-	return m_firstName;
+string Student::GetFirstName() const {
+	string firstName = m_firstName;
+	return firstName;
 }
 
-std::string Student_Data::GetLastName() const {
+string Student::GetLastName() const {
 	return m_lastName;
 }
 
-float Student_Data::GetMarks(Subject subject) const {
+float Student::GetMarks(Subject subject) const {
 	return m_marks[subject];
 }
 
-float Student_Data::GetPercentage() const {
+float Student::GetPercentage() const {
 	return m_percentage;
 }
 
-char Student_Data::GetGrade() const {
+char Student::GetGrade() const {
 	return m_grade;
 }

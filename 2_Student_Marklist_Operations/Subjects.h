@@ -6,3 +6,5 @@ enum Subject {
 	biology = 3,
 	english = 4
 };
+
+//all should be in caps for enums since its a constant

@@ -13,34 +13,23 @@
 
 class UI {
 private:
-	Subject returnSubject();
+	Subject returnSubject() const;
 
 public:
-	void AddSeperator(int count);
-	void ShowData(Database database);
-	void PrintHeadingElement(const char* title, int width);
-	void PrintTopColumn();
-	void PrintStudent(Database database, int rollno);
-	void PrintSeperator(int characters);
+	void AddSeperator(int count) const;
+	void ShowData(Database database) const;		//by referemce 
+	void PrintHeadingElement(const char* title, int width) const;
+	void PrintTopColumn() const;
+	void PrintStudent(Database database, int rollno) const; //by ref
+	void PrintSeperator(int characters) const;
 
-	void AppendStudent(Database& database);
-	void EnterAllMarksOfASubject(Database& database);
-	void UpdateMarks(Database& database);
-	void DeleteStudent(Database& database);
-	void InsertStudent(Database& database);
-	void UpdateAStudentName(Database& database);
-	void ViewStudentData(Database& database);
-	void DisplayToppers(Database& databse);
-	void DisplaySubjectToppers(Database& database);
-
-	//"1. add a student"
-	//"2. enter everyone's marks of a subject"
-	//"3. update marks"
-	//"4. delete a student"
-	//"5. insert a student"
-	//"6. update a student name"
-	//"7. View Data of a student"
-	//"8. display topper"
-	//"9. Display Subjectwise Topper"
-	//"10. Save and Exit"
+	void AppendStudent(Database& database) const;
+	void EnterAllMarksOfASubject(Database& database) const;
+	void UpdateMarks(Database& database) const;
+	void DeleteStudent(Database& database) const;
+	void InsertStudent(Database& database) const;
+	void UpdateAStudentName(Database& database) const;
+	void ViewStudentData(Database& database) const;
+	void DisplayToppers(Database& databse) const;
+	void DisplaySubjectToppers(Database& database) const;
 };

@@ -1,23 +1,26 @@
 #pragma once
 #include <string>
 #include "Subjects.h"
+using namespace std;
 
-#define NAME_SIZE 50
+#define name_size 11
 
-class Student_Data
-{
+
+class Student {
+
 private:
+	//Attributes
 	int m_rollNo;
-	char m_firstName[NAME_SIZE], m_lastName[NAME_SIZE];
+	char m_firstName[name_size], m_lastName[name_size];		//try using string
 	float m_marks[5];
 	float m_percentage;
 	char m_grade;
 	void defaultMarks();
 
 public:
-	Student_Data(); //Constructor
-	Student_Data(int rollno, char* firstname, char* lastname); //Parameterized Constructor
-	void setRollNo(int rollno);
+	Student();
+	Student(int rollno, char* firstname, char* lastname);
+	void SetRollNo(int rollno);
 	void SetFirstName(char* firstName);
 	void SetLastName(char* lastName);
 	void SetMarks(float marks, Subject subject);
@@ -25,8 +28,8 @@ public:
 	void SetGrade();
 
 	int GetRollNo() const;
-	std::string GetFirstName() const;
-	std::string GetLastName() const;
+	string GetFirstName() const;
+	string GetLastName() const;
 	float GetMarks(Subject subject) const;
 	float GetPercentage() const;
 	char GetGrade() const;

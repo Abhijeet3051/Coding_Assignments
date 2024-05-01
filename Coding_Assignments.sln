@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1_To_Find_Sin_Cos_Value_Of_Angle_By_Taylor_Series", "1_To_Find_Sin_Cos_Value_Of_Angle_By_Taylor_Series\1_To_Find_Sin_Cos_Value_Of_Angle_By_Taylor_Series.vcxproj", "{081C2BF5-1B8C-4952-8CCD-D9F9F77E75DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_Student_Marklist_Operations", "2_Student_Marklist_Operations\2_Student_Marklist_Operations.vcxproj", "{9B1391E6-9203-4FAD-B3A4-61724646A71D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{081C2BF5-1B8C-4952-8CCD-D9F9F77E75DE}.Release|x64.Build.0 = Release|x64
 		{081C2BF5-1B8C-4952-8CCD-D9F9F77E75DE}.Release|x86.ActiveCfg = Release|Win32
 		{081C2BF5-1B8C-4952-8CCD-D9F9F77E75DE}.Release|x86.Build.0 = Release|Win32
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Debug|x64.ActiveCfg = Debug|x64
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Debug|x64.Build.0 = Debug|x64
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Debug|x86.Build.0 = Debug|Win32
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x64.ActiveCfg = Release|x64
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x64.Build.0 = Release|x64
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x86.ActiveCfg = Release|Win32
+		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

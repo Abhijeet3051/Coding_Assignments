@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1_To_Find_Sin_Cos_Value_Of_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_Student_Marklist_Operations", "2_Student_Marklist_Operations\2_Student_Marklist_Operations.vcxproj", "{9B1391E6-9203-4FAD-B3A4-61724646A71D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_Shape", "3_Shape\3_Shape.vcxproj", "{E951B81A-82B7-40A6-82BF-A818F47DE64C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x64.Build.0 = Release|x64
 		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x86.ActiveCfg = Release|Win32
 		{9B1391E6-9203-4FAD-B3A4-61724646A71D}.Release|x86.Build.0 = Release|Win32
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Debug|x64.ActiveCfg = Debug|x64
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Debug|x64.Build.0 = Debug|x64
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Debug|x86.Build.0 = Debug|Win32
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Release|x64.ActiveCfg = Release|x64
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Release|x64.Build.0 = Release|x64
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Release|x86.ActiveCfg = Release|Win32
+		{E951B81A-82B7-40A6-82BF-A818F47DE64C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

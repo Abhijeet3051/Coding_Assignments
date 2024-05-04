@@ -49,7 +49,7 @@ void UI::PrintTableSeperator() {
 	AddSeperator(COST_WIDTH - 1, '-');
 }
 
-void UI::PrintAnArtifact(Artifact& artifact) {
+void UI::PrintAnArtifact(const Artifact& artifact) {
 	char seperator = ' ';
 	cout << "| " << left << setw(NAME_WIDTH - 2) << setfill(seperator) << artifact.GetObjectName();
 

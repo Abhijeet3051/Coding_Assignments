@@ -20,7 +20,7 @@ public:
 	void PrintHeading();
 	void AddSeperator(int count, char c);
 	void PrintTableSeperator();
-	void PrintAnArtifact(Artifact& artifact);
+	void PrintAnArtifact(const Artifact& artifact);
 	void PrintTotalCost(ArtifactDatabase& artifactDatabase);
 	void PrintDatabase(ArtifactDatabase& artifactDatabase);
 

@@ -81,8 +81,7 @@ int Student::GetRollNo() const {
 }
 
 string Student::GetFirstName() const {
-	string firstName = m_firstName;
-	return firstName;
+	return m_firstName;
 }
 
 string Student::GetLastName() const {

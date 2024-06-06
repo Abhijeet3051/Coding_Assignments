@@ -1,6 +1,8 @@
 //#include "Complex.h"
 #include "ComplexInOut.h"
 
+//using namespace std;
+
 int main() {
 	Complex c1, c2;
 	float a;
@@ -58,7 +60,6 @@ int main() {
 	cout << "c1 / a = " << c1 / a << endl;
 	cout << "a / c1 = " << a / c1 << endl;
 	cout << endl;
-
 
 	return 0;
 }

@@ -17,5 +17,5 @@ Complex Complex::operator / (float a) {
 }
 
 Complex operator / (float a, Complex& c) {
-	return a * c.conjugate() / c.modulus();
+	return c.conjugate() / c.modulus() * a;
 }

@@ -1,10 +1,10 @@
 #include "Complex.h"
 
-float Complex::GetReal() {
+float Complex::GetReal() const{
 	return m_real;
 }
 
-float Complex::GetImg() {
+float Complex::GetImg()const {
 	return m_img;
 }
 

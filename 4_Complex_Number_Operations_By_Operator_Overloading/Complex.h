@@ -11,8 +11,8 @@ public:
 	Complex(float, float);
 
 	//Get and Set Functions
-	float GetReal();
-	float GetImg();
+	float GetReal()const;
+	float GetImg()const;
 	void SetReal(float);
 	void SetImg(float);
 

@@ -14,7 +14,7 @@ istream& operator >>(istream& in, Complex& c) {
 	return in;
 }
 
-ostream& operator <<(ostream& out, Complex& c) {
+ostream& operator <<(ostream& out, const Complex& c) {
 	if (c.GetImg() >= 0) {
 		out << c.GetReal() << "+" << c.GetImg() << "i";
 	}
